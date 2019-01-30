@@ -169,3 +169,7 @@ dist/
 
 #log
 *.log
+
+# .vscode
+.vscode
+**/.vscode/
