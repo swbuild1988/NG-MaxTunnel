@@ -171,5 +171,5 @@ dist/
 *.log
 
 # .vscode
-.vscode
-**/.vscode/
+# .vscode
+# **/.vscode/
