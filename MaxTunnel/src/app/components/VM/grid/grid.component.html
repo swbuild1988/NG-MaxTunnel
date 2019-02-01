@@ -1,0 +1,27 @@
+<div class='grid'>
+    <div class="gridTitle">
+        <p>{{title}}</p>
+    </div>
+    <div class="subTitle">
+        <div class="name">
+            <p> {{subTitle[0]}} </p>
+        </div>
+        <div class="val">
+            <p> {{subTitle[1]}} </p>
+        </div>
+        <div class="percent">
+            <p> {{subTitle[2]}} </p>
+        </div>
+    </div>
+    <div *ngFor="let item of data" class="row">
+        <div class="name">
+            <p>{{item.name}}</p>
+        </div>
+        <div class="val">
+            <p>{{item.value + item.unit}}</p>
+        </div>
+        <div class="percent">
+            <p>{{item.percent}}</p>
+        </div>
+    </div>
+</div>
