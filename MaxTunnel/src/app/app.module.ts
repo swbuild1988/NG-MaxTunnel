@@ -51,8 +51,12 @@ import {
 import {
     NgxEchartsModule
 } from 'ngx-echarts';
-import { CommonChartComponent } from './components/Common/common-chart/common-chart.component';
-import { VmMainInspectComponent } from './views/VM/vm-main-inspect/vm-main-inspect.component';
+import {
+    CommonChartComponent
+} from './components/Common/common-chart/common-chart.component';
+import {
+    VmMainInspectComponent
+} from './views/VM/vm-main-inspect/vm-main-inspect.component';
 
 registerLocaleData(en);
 

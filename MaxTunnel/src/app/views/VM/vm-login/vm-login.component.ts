@@ -11,6 +11,9 @@ import {
 import {
     Router
 } from '@angular/router';
+import {
+    UserService
+} from 'src/app/service/user.service';
 
 @Component({
     selector: 'app-vm-login',
@@ -20,7 +23,7 @@ import {
 export class VmLoginComponent implements OnInit {
     validateForm: FormGroup;
 
-    constructor(private fb: FormBuilder, private router: Router) {}
+    constructor(private fb: FormBuilder, private router: Router, private userService: UserService) {}
 
     ngOnInit() {
         this.validateForm = this.fb.group({
@@ -36,6 +39,7 @@ export class VmLoginComponent implements OnInit {
         // }
         console.log('submit', this.validateForm);
         this.router.navigate(['/vmmain']);
+        this.userService.login('admin', '123456');
     }
 
 }
